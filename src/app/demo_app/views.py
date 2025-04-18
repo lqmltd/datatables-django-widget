@@ -9,8 +9,15 @@ class DemoModelListView(generic.ListView):
     template_name = "demo_app/demo_model/demo_model_list.html"
 
 
+class DemoModelCreateView(generic.CreateView):
+    model = models.DemoModel
+    template_name = "demo_app/demo_model/demo_model_create.html"
+    form_class = forms.DemoModelForm
+    success_url = reverse_lazy("demo_app:demo_model_list")
+
+
 class DemoModelUpdateView(generic.UpdateView):
     model = models.DemoModel
     template_name = "demo_app/demo_model/demo_model_update.html"
-    form_class = forms.DemoModelUpdateForm
+    form_class = forms.DemoModelForm
     success_url = reverse_lazy("demo_app:demo_model_list")
