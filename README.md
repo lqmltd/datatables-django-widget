@@ -28,7 +28,7 @@ The `ArrayField` that the widget is designed to be used with is only available w
 git clone https://github.com/lqmltd/datatables-django-widget.git
 ```
 
-2. Download the datatables files (see [this README](./blob/main/app/static/grid-widget/datatables/README.md))
+2. Download the datatables files (see [this README](./app/static/grid-widget/datatables/README.md))
     2. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
 
 2. Build and start the Docker compose environment
@@ -48,7 +48,7 @@ You will need:
 
 1. [Postgres](https://docs.djangoproject.com/en/5.2/ref/databases/#postgresql-notes) (required)
 2. [Datatables](https://datatables.net/download/index) (required)
-   1. See [this README](./blob/main/app/static/grid-widget/datatables/README.md) for instructions on downloading your own bundle
+   1. See [this README](./app/static/grid-widget/datatables/README.md) for instructions on downloading your own bundle
    2. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
 3. [Bootstrap 5](https://getbootstrap.com/) (recommended)
    1. Datatables provides [styling for various other UI librarys](https://datatables.net/examples/styling/), but you will likely need to modify some of the code used here to make things look right
@@ -57,15 +57,15 @@ You will need:
 
 Files to copy:
 
-1. [widgets.py](./blob/main/app/utils/widgets.py)
-2. [fields.py](./blob/main/app/utils/fields.py)
-3. [grid-widget.css](./blob/main/app/static/grid-widget/grid-widget.css)
-4. [grid-widget-text-area-plugin.js](./blob/main/app/static/grid-widget/grid-widget-text-area-plugin.js)
-5. [grid-widget.js](./blob/main/app/static/grid-widget/grid-widget.js)
-6. [project.css](./blob/main/app/static/project.css) (incorporate this into your project's CSS files)
+1. [widgets.py](./app/utils/widgets.py)
+2. [fields.py](./app/utils/fields.py)
+3. [grid-widget.css](./app/static/grid-widget/grid-widget.css)
+4. [grid-widget-text-area-plugin.js](./app/static/grid-widget/grid-widget-text-area-plugin.js)
+5. [grid-widget.js](./app/static/grid-widget/grid-widget.js)
+6. [project.css](./app/static/project.css) (incorporate this into your project's CSS files)
 
 If you want tooltips:
 
-6. [project.js](./blob/main/app/static/project.js)
+6. [project.js](./app/static/project.js)
 
 _If you don't, remove all calls to `initialiseTooltips()` and `disposeTooltips()`_
