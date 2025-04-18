@@ -4,4 +4,6 @@ version = "1.0.0"
 description = "Wrap up datatables editor in a Django widget for editing ArrayFields"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "django>=5.2",
+]
