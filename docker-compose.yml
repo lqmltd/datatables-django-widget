@@ -8,7 +8,7 @@ services:
     image: "postgres:16-bookworm"
     container_name: datatables_django_widget_datatables_django_widgetlocal_postgres
     env_file:
-      - ./app/.env
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - postgres_backups:/backups
@@ -22,7 +22,7 @@ services:
       - ./app:/app:z
       - web_uv_cache:/usr/local/bin/uv_cache
     env_file:
-      - ./app/.env
+      - .env
     ports:
       - '8080:8080'
     command: /start
