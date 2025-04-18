@@ -1,0 +1,21 @@
+.DTE_Field_InputControl textarea {
+    /* Make height depend on text*/
+    field-sizing: content;
+    /* Don't allow manual resizing*/
+    resize: none;
+    /* Remove rounded corners, so it fits neatly in the table cell */
+    border-radius: 0;
+    /* Make padding match a normal Bootstrap table cell */
+    padding: 0.5rem;
+}
+
+.DTE_Field_InputControl textarea:focus {
+    /* Default input box shadow is very similar to the blue select border */
+    /* Make it a nice yellow (based on BS warning colour) */
+    box-shadow: 0 0 0 .25rem rgba(255, 193, 7, .25) !important;
+}
+
+/* When a td has an open editor, remove padding, as this padding is used by the textarea itself */
+td:has(.DTE_Inline) {
+    padding: 0;
+}

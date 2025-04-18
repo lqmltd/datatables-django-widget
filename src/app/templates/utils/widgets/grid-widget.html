@@ -1,0 +1,26 @@
+<div id="grid_widget_{{ name }}"
+     class="grid-widget"
+     data-grid-widget-column-names="{{ column_names_str }}"
+     data-grid-widget-value="{{ value }}"
+     data-grid-widget-input-name="{{ name }}">
+  <input type="hidden" name="{{ name }}" />
+  <table id="example" class="table table-bordered">
+    <thead>
+      <!-- Manually create header so we can add a row of search boxes beneath -->
+      <tr>
+        <!-- Extra th for new row buttons -->
+        <th></th>
+        {% for column_name in column_names %}<th>{{ column_name }}</th>{% endfor %}
+        <!-- Extra th for delete buttons -->
+        <th></th>
+      </tr>
+      <tr>
+        <!-- Extra th for new row buttons -->
+        <th></th>
+        {% for column_name in column_names %}<th></th>{% endfor %}
+        <th></th>
+        <!-- Extra th for delete buttons -->
+      </tr>
+    </thead>
+  </table>
+</div>
