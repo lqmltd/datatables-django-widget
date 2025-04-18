@@ -29,7 +29,7 @@ git clone https://github.com/lqmltd/datatables-django-widget.git
 ```
 
 2. Download the datatables files (see [this README](./app/static/grid-widget/datatables/README.md))
-    2. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
+   1. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
 
 2. Build and start the Docker compose environment
 ```bash
@@ -66,6 +66,6 @@ Files to copy:
 
 If you want tooltips:
 
-6. [project.js](./app/static/project.js)
+7. [project.js](./app/static/project.js)
 
 _If you don't, remove all calls to `initialiseTooltips()` and `disposeTooltips()`_
