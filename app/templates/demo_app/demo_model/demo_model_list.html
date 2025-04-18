@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <a href="{% url "demo_app:demo_model_create" %}">Create your first demo model</a>
   <ul>
     {% for demo_model in object_list %}
       <li><a href="{% url "demo_app:demo_model_update" pk=demo_model.pk %}">{{ demo_model.pk }}</a></li>
