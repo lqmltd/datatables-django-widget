@@ -69,9 +69,6 @@ window.onload = () => {
         // Table element
         const gw_table = gw.querySelector("table");
 
-        console.log(gw)
-        console.log(gw_table)
-
         // Initialise column options for table and editor
         const column_names_list = gw.dataset.gridWidgetColumnNames.split(",")
         const editor_fields = column_names_list.map((col, ind) => {
