@@ -59,13 +59,14 @@ Files to copy:
 
 1. [widgets.py](./app/utils/widgets.py)
 2. [fields.py](./app/utils/fields.py)
-3. [grid-widget.css](./app/static/grid-widget/grid-widget.css)
-4. [grid-widget-text-area-plugin.js](./app/static/grid-widget/grid-widget-text-area-plugin.js)
-5. [grid-widget.js](./app/static/grid-widget/grid-widget.js)
-6. [project.css](./app/static/project.css) (incorporate this into your project's CSS files)
+3. [grid-widget.html](./app/templates/utils/widgets/grid-widget.html)
+4. [grid-widget.css](./app/static/grid-widget/grid-widget.css)
+5. [grid-widget-text-area-plugin.js](./app/static/grid-widget/grid-widget-textarea-plugin.js)
+6. [grid-widget.js](./app/static/grid-widget/grid-widget.js)
+7. [project.css](./app/static/project.css) (incorporate this into your project's CSS files)
 
 If you want tooltips:
 
-7. [project.js](./app/static/project.js)
+8. [project.js](./app/static/project.js)
 
 _If you don't want tooltips, remove all calls to `initialiseTooltips()` and `disposeTooltips()`_
