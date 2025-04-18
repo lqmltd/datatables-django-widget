@@ -31,12 +31,12 @@ git clone https://github.com/lqmltd/datatables-django-widget.git
 2. Download the datatables files (see [this README](./app/static/grid-widget/datatables/README.md))
    1. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
 
-2. Build and start the Docker compose environment
+3. Build and start the Docker compose environment
 ```bash
 docker compose up -d --build
 ```
 
-3. Click "Create your first demo model"
+4. Click "Create your first demo model"
 
 ![./readme_images/demo_screenshot.png](./readme_images/demo_screenshot.png)
 
@@ -68,4 +68,4 @@ If you want tooltips:
 
 7. [project.js](./app/static/project.js)
 
-_If you don't, remove all calls to `initialiseTooltips()` and `disposeTooltips()`_
+_If you don't want tooltips, remove all calls to `initialiseTooltips()` and `disposeTooltips()`_
