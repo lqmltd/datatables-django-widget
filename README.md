@@ -2,6 +2,8 @@
 
 [DataTables](https://datatables.net/) is an excellent JS library for displaying tabular data, and its [Editor](https://editor.datatables.net/) plugin provides tabular editing.
 
+**!! DataTables Editor is a paid-for plugin. We are not affiliated with DataTables. !!**
+
 We have encapsulated this into a Django widget, to allow easy editing of Postgres' [ArrayField](https://docs.djangoproject.com/en/5.1/ref/contrib/postgres/fields/#arrayfield).
 
 The specific implementation, and feature-set, we have created for this widget may not suit your needs perfectly, but this repo may serve as a useful reference point for your own implementations.
@@ -28,7 +30,7 @@ The `ArrayField` that the widget is designed to be used with is only available w
 git clone https://github.com/lqmltd/datatables-django-widget.git
 ```
 
-2. Download the datatables files (see [this README](./app/static/grid-widget/datatables/README.md))
+2. Download the DataTables files (see [this README](./app/static/grid-widget/datatables/README.md))
    1. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
 
 3. Build and start the Docker compose environment
@@ -47,9 +49,9 @@ The widget is the table, the surrounding form is ugly. We recommend using [Djang
 You will need:
 
 1. [Postgres](https://docs.djangoproject.com/en/5.2/ref/databases/#postgresql-notes) (required)
-2. [Datatables](https://datatables.net/download/index) (required)
+2. [DataTables](https://datatables.net/download/index) (required)
    1. See [this README](./app/static/grid-widget/datatables/README.md) for instructions on downloading your own bundle
-   2. You will need a [Datatables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
+   2. You will need a [DataTables Editor license](https://editor.datatables.net/purchase/index) (a trial is available)
 3. [Bootstrap 5](https://getbootstrap.com/) (recommended)
    1. Datatables provides [styling for various other UI librarys](https://datatables.net/examples/styling/), but you will likely need to modify some of the code used here to make things look right
 4. [Bootstrap icons](https://icons.getbootstrap.com/) (recommended)
