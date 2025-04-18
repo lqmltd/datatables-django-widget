@@ -1,0 +1,1 @@
+# datatables-django-widget
