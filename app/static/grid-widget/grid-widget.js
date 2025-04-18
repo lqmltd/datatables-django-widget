@@ -4,10 +4,26 @@ const grid_widget_tables = {};
 
 // Variable which determines whether to prevent the user reloading the page
 let anything_edited = false;
+// Variable set when form is submitted, so the user isn't told they have unsaved data when they are saving their data!
+let form_submitted = false;
 // Show a warning to the user when they are reloading the page, if anything has been edited
 window.onbeforeunload = () => {
-    return anything_edited;
+    if (anything_edited && !form_submitted) {
+        return "You have unsaved changes. Are you sure you want to leave?";
+    }
 };
+
+// Listen for the form submission event
+document.addEventListener("DOMContentLoaded", () => {
+    const forms = document.querySelectorAll("form");
+
+    forms.forEach((form) => {
+        form.addEventListener("submit", () => {
+            // Mark the form as being submitted
+            form_submitted = true;
+        });
+    });
+});
 
 function syncGridWidgetInputValue(gw) {
     /// Store the current value of the grid widget in the hidden field that the form uses for submission
